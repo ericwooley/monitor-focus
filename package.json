@@ -1,0 +1,29 @@
+{
+  "name": "image-capture-test",
+  "version": "0.0.1",
+  "description": "image capture test",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel src/ --out-dir dist",
+    "dev": "babel src/ --out-dir dist --source-maps",
+    "run": "node dist/index.js",
+    "watch": "npm-watch"
+  },
+  "watch": {
+    "dev": "src/*.js",
+    "run": "dist/*.js"
+  },
+  "author": "Eric Wooley",
+  "license": "MIT",
+  "devDependencies": {
+    "babel": "^6.3.26",
+    "babel-cli": "^6.4.0",
+    "brain": "^0.7.0",
+    "opencv": "^4.0.0"
+  },
+  "babel": {
+    "presets": [
+      "es2015"
+    ]
+  }
+}
