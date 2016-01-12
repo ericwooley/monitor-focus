@@ -1,5 +1,5 @@
 import fs from 'fs'
-import EyeDetector from './get-eyes'
+import EyeDetector from './eye-detector'
 const centerScreenImages = fs.readdirSync('./test-data/center-screen')
   .map(imgName => './test-data/center-screen/' + imgName)
   .filter(imageName => imageName.indexOf('.DS_Store') === -1)

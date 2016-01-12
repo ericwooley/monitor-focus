@@ -7,6 +7,7 @@
     "build": "babel src/ --out-dir dist",
     "dev": "babel src/ --out-dir dist --source-maps",
     "run": "node dist/index.js",
+    "test": "rm -f out/* && npm run dev && node dist/machine-learning.js",
     "watch": "npm-watch"
   },
   "watch": {
